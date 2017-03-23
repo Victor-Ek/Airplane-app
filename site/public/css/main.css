@@ -1,3 +1,5 @@
+/* Layout Css  */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 
 body {
     background-color: #2196f3;
+    max-width: 360px;
 }
 
 h1 {
@@ -42,9 +45,6 @@ h1 {
     animation-duration: 0.2s;
     top: 0;
     left: 0;
-    -webkit-box-shadow: 0px 0px 300px 74px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 300px 74px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 300px 74px rgba(0,0,0,0.75);
 }
 
 .menu {
@@ -55,13 +55,12 @@ h1 {
     flex-direction: column;
 }
 
-/* .black_border {
-    width: 1000px;
+.back {
+    width: 200px;
     height: 100%;
     opacity: 0.4;
     background-color: black;
 }
-*/
 
 .hamburgare_js {
     display: flex;
@@ -79,10 +78,6 @@ h1 {
 .button {
     display: flex;
     align-items: center;
-}
-
-.back {
-  margin-bottom: 10px;
 }
 
 a {
@@ -116,10 +111,82 @@ a:hover {
     background-color: #90caf9;
 }
 
-#more {
-    right: 16px;
-}
-
-.menu_icon {
+.menu_icon1 {
     width: 24px;
 }
+
+
+
+
+/* Layout Css  */
+
+/* Index Css  */
+
+.mainScreen {
+    display: flex;
+    flex-direction: column;
+}
+
+.storeCardRow1{
+    display: flex;
+    flex-direction: row;
+}
+
+.storeCardRow2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.storeCardRow3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.shopCard {
+min-width: 100px;
+height:  135px;
+border-radius: 5px;
+background-color: white;
+margin-left: 9px;
+margin-top: 14px;
+}
+
+.storeH1 {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.moreH1 {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+    margin-right: 40px;
+
+}
+
+.storeCardH1 {
+    font-size: 14px;
+    color: black;
+    margin-left: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_icon2 {
+    width: 24px;
+    margin-left: 25px;
+}
+
+.shopCardPicture {
+    margin: 5px;
+    height: 90px;
+    width: 90px;
+
+}
+
+/* Index Css  */
