@@ -12,7 +12,7 @@ body {
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: black;
     font-size: 20px;
 }
 
@@ -21,16 +21,21 @@ h1 {
     background-color: #90caf9;
     width: 100%;
     height: 50px;
+    position: fixed;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .topBar_sect1 {
     align-self: center;
+    align-items: center;
+    align-content: center;
     margin-left: 20px;
     background-color: #90caf9;
 }
 
 .hamicn {
     width: 24px;
+    margin-top: 3px;
 }
 
 .hamburger {
@@ -55,7 +60,7 @@ h1 {
     flex-direction: column;
 }
 
-.back {
+.shadow {
     width: 200px;
     height: 100%;
     opacity: 0.4;
@@ -86,6 +91,7 @@ a {
     text-align: center;
     width: 100%;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
@@ -116,9 +122,8 @@ a:hover {
 }
 
 
-
-
 /* Layout Css  */
+
 
 /* Index Css  */
 
@@ -127,43 +132,52 @@ a:hover {
     flex-direction: column;
 }
 
-.storeCardRow1{
+.storeCardRow {
     display: flex;
     flex-direction: row;
+    overflow-x:  scroll;
+    padding-bottom: 20px;
 }
 
-.storeCardRow2 {
-    display: flex;
-    flex-direction: row;
+#top {
+  margin-top: 50px;
 }
 
-.storeCardRow3 {
-    display: flex;
-    flex-direction: row;
+.storeCardRow::-webkit-scrollbar {
+  height: 0;
+  width: 0;
 }
 
 .shopCard {
-min-width: 100px;
-height:  135px;
-border-radius: 5px;
-background-color: white;
-margin-left: 9px;
-margin-top: 14px;
+    min-width: 100px;
+    height: 135px;
+    border-radius: 2px;
+    background-color: white;
+    margin-left: 9px;
+    margin-top: 14px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .storeH1 {
     font-size: 14px;
-    color: black;
+    color: white;
     margin-top: 20px;
     margin-left: 20px;
 }
 
 .moreH1 {
-    font-size: 14px;
-    color: black;
+    font-size: 12px;
     margin-top: 20px;
-    margin-right: 40px;
+    color: white;
+    width: 50px;
+    right:30px;
+    position: absolute;
+    font-weight: 900;
+    z-index: -1;
+}
 
+.moreH1:hover {
+  color: white;
 }
 
 .storeCardH1 {
@@ -186,7 +200,7 @@ margin-top: 14px;
     margin: 5px;
     height: 90px;
     width: 90px;
-
 }
+
 
 /* Index Css  */
