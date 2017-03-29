@@ -1,4 +1,6 @@
-/* Layout Css  */
+
+
+/* Layout Css */
 
 * {
     margin: 0;
@@ -7,7 +9,11 @@
 
 body {
     background-color: #2196f3;
-    max-width: 360px;
+}
+
+body::-webkit-scrollbar {
+  height: 0;
+  width: 0;
 }
 
 h1 {
@@ -58,6 +64,7 @@ h1 {
     background-color: white;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .shadow {
@@ -82,13 +89,20 @@ h1 {
 
 .button {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 28px;
+}
+
+.nav_icon {
+  height: 20px;
+  margin-right: 30px;
+  margin-left: 15px;
 }
 
 a {
     text-decoration: none;
     color: #737373;
-    text-align: center;
     width: 100%;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -122,7 +136,7 @@ a:hover {
 }
 
 
-/* Layout Css  */
+/* Layout Css slut */
 
 
 /* Index Css  */
@@ -148,7 +162,7 @@ a:hover {
   width: 0;
 }
 
-.shopCard {
+.storeCard {
     min-width: 100px;
     height: 135px;
     border-radius: 2px;
@@ -171,9 +185,12 @@ a:hover {
     color: white;
     width: 50px;
     right:30px;
-    position: absolute;
+    position:absolute;
     font-weight: 900;
-    z-index: -1;
+}
+
+.moreH1_js {
+  z-index: -1;
 }
 
 .moreH1:hover {
@@ -196,11 +213,62 @@ a:hover {
     margin-left: 25px;
 }
 
-.shopCardPicture {
+.storeCardPicture {
     margin: 5px;
     height: 90px;
     width: 90px;
 }
 
 
-/* Index Css  */
+/* Index Css slut */
+
+
+/* Popular Css */
+
+.storeCard2 {
+    min-width: 170px;
+    height: 210px;
+    border-radius: 2px;
+    background-color: white;
+    margin-left: 8px;
+    margin-top: 14px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    float: left;
+}
+
+.storeCardPicture2 {
+    width: 170px;
+    height: 170px;
+}
+
+.popular_card {
+  margin-left: 27px;
+  margin-top: 8px;
+}
+
+#popular_row{
+  width: 100%;
+  margin-top: 50px;
+
+  }
+/* Popular Css slut */
+
+/* My Chassis Css */
+
+.chassis_card {
+    min-width: 170px;
+    height: 210px;
+    border-radius: 2px;
+    background-color: white;
+    margin-left: 8px;
+    margin-top: 14px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    float: left;
+}
+
+.chassisCardPicture {
+  width: 170px;
+  height: 170px;
+}
+
+/* My Chassis slut */
