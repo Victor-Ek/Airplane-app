@@ -3,6 +3,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -14,8 +16,8 @@ body::-webkit-scrollbar {
     width: 0;
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
+
+h1, {
     color: black;
     font-size: 20px;
 }
@@ -104,7 +106,6 @@ a {
     color: #737373;
     width: 100%;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
@@ -233,6 +234,22 @@ a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.heart {
+  width: 19px;
+  height: 17px;
+  margin-left: 27px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.heart.unselected {
+background-image: url(../img/ic_favorite_unselected.png);
+}
+
+.heart.selected {
+background-image: url(../img/ic_favorite_selected.png);
+}
+
 .storeCardPicture2 {
     width: 170px;
     height: 170px;
@@ -259,7 +276,8 @@ a:hover {
 /* My Chassis Css */
 
 .chassis_card {
-    width: 345px;
+    min-width: 345px;
+    max-width: 345px;
     margin: 8px;
     height: 230px;
     border-radius: 2px;
@@ -281,7 +299,6 @@ a:hover {
 .read {
     font-size: 15px;
     color: black;
-    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     text-align: center;
     width: auto;
@@ -292,7 +309,6 @@ a:hover {
 .chassiH1 {
     text-align: center;
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .chassiH1_top {
@@ -302,6 +318,7 @@ a:hover {
 
 .chassiP {
     margin: 10px;
+    font-size: 13px;
 }
 
 #row {
@@ -344,6 +361,13 @@ a:hover {
     width:40px;
     height: 20px;
     align-self: flex-end;
+    position: absolute;
+    right: 30px;
+    margin: 5px;
+}
+
+#settings {
+  margin: 10px;
 }
 
 /* settings slut */

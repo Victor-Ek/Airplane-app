@@ -7,6 +7,6 @@ function hamburgar_meny() {
     element.classList.toggle("moreH1_js");
 }
 
-function heart() {
-
+function heart(element) {
+  element.classList.toggle("selected")
 }

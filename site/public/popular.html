@@ -1,242 +1,283 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Airplane Mode</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./css/main.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    </head>
-    <body>
-
-        <header class="topBar">
-
-            <div class="topBar_sect1">
-                <img src="./img/ic_menu_black_24px.svg" class="hamicn" onclick="hamburgar_meny()"/>
-
-                <div class="hamburger">
-
-                    <div class="menu">
-
-                        <div>
-                            <img src="./img/Header.jpg">
-                        </div>
-
-                        <div class="button">
-                            <img src="./img/plane-icon.png" class="nav_icon"/>
-                            <a href="index.html">Browse</a>
-                        </div>
-
-                        <div class="button">
-                            <img src="./img/My-Chassis.png" class="nav_icon"/>
-                            <a href="my_chassis.html">My Chassis</a>
-                        </div>
-
-                        <div class="button">
-                            <img src="./img/Settings.png" class="nav_icon"/>
-                            <a href="settings.html">Settings</a>
-                        </div>
-
-                        <div class="button">
-                            <img src="./img/About.png" class="nav_icon"/>
-                            <a href="about.html">About</a>
-                        </div>
-
-                    </div>
-                    <div class="shadow" onclick="hamburgar_meny()"></div>
-                </div>
-            </div>
-
-            <div class="topBar_sect2">
-                <h1>Home</h1>
-            </div>
-
-            <div class="topBar_sect3">
-                <img src="./img/ic_more_vert_black_24px.svg" class="menu_icon1">
-            </div>
-        </header>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Airplane Mode</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="topBar">
+
+            <div class="topBar_sect1">
+                <img src="./img/ic_menu_black_24px.svg" class="hamicn" onclick="hamburgar_meny()"/>
+
+                <div class="hamburger">
+
+                    <div class="menu">
+
+                        <div>
+                            <img src="./img/Header.jpg">
+                        </div>
+
+                        <div class="button">
+                            <img src="./img/plane-icon.png" class="nav_icon"/>
+                            <a href="index.html">Browse</a>
+                        </div>
+
+                        <div class="button">
+                            <img src="./img/My-Chassis.png" class="nav_icon"/>
+                            <a href="my_chassis.html">My Chassis</a>
+                        </div>
+
+                        <div class="button">
+                            <img src="./img/Settings.png" class="nav_icon"/>
+                            <a href="settings.html">Settings</a>
+                        </div>
+
+                        <div class="button">
+                            <img src="./img/About.png" class="nav_icon"/>
+                            <a href="about.html">About</a>
+                        </div>
+
+                    </div>
+                    <div class="shadow" onclick="hamburgar_meny()"></div>
+                </div>
+            </div>
+
+            <div class="topBar_sect2">
+                <h1>Home</h1>
+            </div>
+
+            <div class="topBar_sect3">
+                <img src="./img/ic_more_vert_black_24px.svg" class="menu_icon1">
+            </div>
+        </header>
         <div class="mainScreen">
 
     <div class="row" id="popular_row">
 
         <div class="storeCard2">
             <img src="./img/Plane2.jpg" class="storeCardPicture2"/>
-            <div class="row">
-                <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-                <img src="./img/ic_share.png" alt="share" class="popular_card">
-            </div>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane3.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane1.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane4.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
+
         </div>
 
-        <div class="storeCard2">
-            <img src="./img/Plane1.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+        <div class="storeCard2">
+            <img src="./img/Plane5.jpg" class="storeCardPicture2"/>
+          <div class="row">
+              <div class="heart unselected" onclick="heart(this)"></div>
+              <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+              <img src="./img/ic_share.png" alt="share" class="popular_card">
+          </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane6.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
+        </div>
+
+        <div class="storeCard2">
+            <img src="./img/Plane5.jpg" class="storeCardPicture2"/>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
+        </div>
+
+        <div class="storeCard2">
+            <img src="./img/Plane3.jpg" class="storeCardPicture2"/>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
+        </div>
+
+        <div class="storeCard2">
+            <img src="./img/Plane1.jpg" class="storeCardPicture2"/>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
+        </div>
+
+        <div class="storeCard2">
+            <img src="./img/Plane4.jpg" class="storeCardPicture2"/>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane5.jpg" class="storeCardPicture2"/>
-            <div class="row">
-                <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-                <img src="./img/ic_share.png" alt="share" class="popular_card">
-            </div>
-        </div>
-
-        <div class="storeCard2">
-            <img src="./img/Plane3.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
-        </div>
-
-        <div class="storeCard2">
-            <img src="./img/Plane1.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
-        </div>
-
-        <div class="storeCard2">
-            <img src="./img/Plane4.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
-        </div>
-
-        <div class="storeCard2">
-            <img src="./img/Plane5.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
-        </div>
-
-        <div class="storeCard2">
-            <img src="./img/Plane6.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
-        </div>
-
-        <div class="storeCard2">
-            <img src="./img/Plane2.jpg" class="storeCardPicture2"/>
-            <div class="row">
-                <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-                <img src="./img/ic_share.png" alt="share" class="popular_card">
-            </div>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
+        </div>
+
+        <div class="storeCard2">
+            <img src="./img/Plane6.jpg" class="storeCardPicture2"/>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
+        </div>
+
+        <div class="storeCard2">
+            <img src="./img/Plane2.jpg" class="storeCardPicture2"/>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane4.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane1.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane3.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane2.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane6.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane2.jpg" class="storeCardPicture2"/>
-            <div class="row">
-                <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-                <img src="./img/ic_share.png" alt="share" class="popular_card">
-            </div>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane3.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane1.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane4.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane2.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
         </div>
 
         <div class="storeCard2">
             <img src="./img/Plane6.jpg" class="storeCardPicture2"/>
-            <img src="./img/ic_favorite_unselected.png" alt="share" class="popular_card" onclick="heart()">
-            <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
-            <img src="./img/ic_share.png" alt="share" class="popular_card">
-        </div>
+            <div class="row">
+                <div class="heart unselected" onclick="heart(this)"></div>
+                <img src="./img/Wikipedia-logo-v2.png" alt="share" class="popular_card">
+                <img src="./img/ic_share.png" alt="share" class="popular_card">
+            </div>
+        </div>
     </div>
 </div>
-
-    </body>
-    <script src="./js/main.js"></script>
-</html>
+
+    </body>
+    <script src="./js/main.js"></script>
+</html>
