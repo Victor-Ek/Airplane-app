@@ -1,3 +1,32 @@
+/* IDs */
+
+#top {
+    margin-top: 50px;
+}
+
+#popular_row {
+    width: 100%;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+#settings {
+  margin: 10px;
+}
+
+#row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#top2 {
+    margin-top: 60px;
+}
+
+/* IDs slut */
+
+
+
 /* Layout Css */
 
 * {
@@ -17,7 +46,7 @@ body::-webkit-scrollbar {
 }
 
 
-h1, {
+h1 {
     color: black;
     font-size: 20px;
 }
@@ -153,10 +182,6 @@ a:hover {
     padding-bottom: 20px;
 }
 
-#top {
-    margin-top: 50px;
-}
-
 .storeCardRow::-webkit-scrollbar {
     height: 0;
     width: 0;
@@ -263,12 +288,6 @@ background-image: url(../img/ic_favorite_selected.png);
     margin-bottom: 5px;
 }
 
-#popular_row {
-    width: 100%;
-    margin-top: 70px;
-    flex-wrap: wrap;
-}
-
 
 /* Popular Css slut */
 
@@ -321,11 +340,6 @@ background-image: url(../img/ic_favorite_selected.png);
     font-size: 13px;
 }
 
-#row {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 
 /* My Chassis slut */
 
@@ -339,10 +353,6 @@ background-image: url(../img/ic_favorite_selected.png);
     margin: 10px;
     display: flex;
     flex-direction: column;
-}
-
-#top2 {
-    margin-top: 60px;
 }
 
 
@@ -364,10 +374,33 @@ background-image: url(../img/ic_favorite_selected.png);
     position: absolute;
     right: 30px;
     margin: 5px;
+
 }
 
-#settings {
-  margin: 10px;
+.s_unselected {
+    background-image: url(../img/switch_off.png);
+}
+
+.s_selected {
+    background-image: url(../img/switch_on.png);
 }
 
 /* settings slut */
+
+
+/* about us */
+
+.background {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin:10px;
+    margin-top: 70px;
+}
+
+.text {
+margin: 10px;
+}
+
+/* about us slut */

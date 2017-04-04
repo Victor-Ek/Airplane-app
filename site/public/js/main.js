@@ -8,5 +8,9 @@ function hamburgar_meny() {
 }
 
 function heart(element) {
-  element.classList.toggle("selected")
+  element.classList.toggle("selected");
+}
+
+function settingsbutton(element) {
+  element.classList.toggle("s_selected");
 }
