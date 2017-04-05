@@ -404,3 +404,41 @@ margin: 10px;
 }
 
 /* about us slut */
+
+@media all and (min-device-width: 416px) {
+
+ /* Index */
+.storeCardRow {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    max-width: 90%;
+    margin-left: 5%;
+
+}
+
+.storeCardRow::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+.storeH1 {
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 7%;
+}
+
+.moreH1 {
+    font-size: 12px;
+    margin-top: 20px;
+    color: white;
+    width: 50px;
+    right: 7%;
+    position: absolute;
+    font-weight: 900;
+}
+
+/* Index slut */
+}
