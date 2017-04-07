@@ -1,74 +1,91 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Airplane Mode</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./css/main.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Airplane Mode</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="topBar">
+
+            <div class="topBar_sect1">
+                <img src="./img/ic_menu_black_24px.svg" class="hamicn" onclick="hamburgar_meny()"/>
+
+                <div class="hamburger">
+
+                    <div class="menu">
+
+                        <div>
+                            <img src="./img/Header.jpg">
+                        </div>
+
+                        <div class="button">
+                            <img src="./img/plane-icon.png" class="nav_icon"/>
+                            <a href="index.html">Browse</a>
+                        </div>
+
+                        <div class="button">
+                            <img src="./img/My-Chassis.png" class="nav_icon"/>
+                            <a href="my_chassis.html">My Chassis</a>
+                        </div>
+
+                        <div class="button">
+                            <img src="./img/Settings.png" class="nav_icon"/>
+                            <a href="settings.html">Settings</a>
+                        </div>
+
+                        <div class="button">
+                            <img src="./img/About.png" class="nav_icon"/>
+                            <a href="about.html">About</a>
+                        </div>
+
+                    </div>
+                    <div class="shadow" onclick="hamburgar_meny()"></div>
+                </div>
+            </div>
+
+            <div class="topBar_sect2">
+                <h1>Home</h1>
+            </div>
+
+            <div class="topBar_sect3">
+                <img src="./img/ic_more_vert_black_24px.svg" class="menu_icon1">
+            </div>
+        </header>
+        <div class="mainScreen">
+    <div class="background">
+        <header>
+            <h1>About Us</h1>
+        </header>
+
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis urna sem. Cras lacinia vestibulum eros ut bibendum. Duis ultrices rhoncus ante, ut blandit felis eleifend eget. Nam sit amet libero et magna pulvinar pulvinar eget sit amet
+                metus. Donec lacinia vulputate quam id eleifend. Nulla facilisi. In vestibulum iaculis lacinia.</p>
+            <p>Donec mi ante, fermentum eget efficitur nec, posuere eget ante. Cras in tempus leo, nec pretium nibh. Curabitur vestibulum euismod magna, nec aliquam mi ornare a. Curabitur sollicitudin dignissim sem, at placerat urna feugiat a. Pellentesque eu
+                pharetra enim. Praesent fermentum metus et lacus vestibulum placerat. Cras id auctor urna, eget ultrices tellus. Etiam pellentesque at erat vel mollis. Nullam sem purus, vestibulum sit amet lacus sit amet, scelerisque suscipit nibh. Suspendisse diam
+                eros, tincidunt non ligula malesuada, feugiat pretium lectus.</p>
+        </div>
+        <div class="row">
 
-        <header class="topBar">
-
-            <div class="topBar_sect1">
-                <img src="./img/ic_menu_black_24px.svg" class="hamicn" onclick="hamburgar_meny()"/>
-
-                <div class="hamburger">
-
-                    <div class="menu">
-
-                        <div>
-                            <img src="./img/Header.jpg">
-                        </div>
-
-                        <div class="button">
-                            <img src="./img/plane-icon.png" class="nav_icon"/>
-                            <a href="index.html">Browse</a>
-                        </div>
-
-                        <div class="button">
-                            <img src="./img/My-Chassis.png" class="nav_icon"/>
-                            <a href="my_chassis.html">My Chassis</a>
-                        </div>
-
-                        <div class="button">
-                            <img src="./img/Settings.png" class="nav_icon"/>
-                            <a href="settings.html">Settings</a>
-                        </div>
-
-                        <div class="button">
-                            <img src="./img/About.png" class="nav_icon"/>
-                            <a href="about.html">About</a>
-                        </div>
-
-                    </div>
-                    <div class="shadow" onclick="hamburgar_meny()"></div>
-                </div>
+            <div class="profile_picture_box">
+                <img src="./img/profile-picture1.png" alt="profile picture" class="profile_picture">
             </div>
-
-            <div class="topBar_sect2">
-                <h1>Home</h1>
+            <div class="profile_picture_box">
+                <img src="./img/profile-picture2.png" alt="profile picture" class="profile_picture">
             </div>
-
-            <div class="topBar_sect3">
-                <img src="./img/ic_more_vert_black_24px.svg" class="menu_icon1">
-            </div>
-        </header>
-        <div class="mainScreen">
-  <div class="background">
-      <header>
-    <h1>About Us</h1>
-  </header>
-
-  <div class="text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis urna sem. Cras lacinia vestibulum eros ut bibendum. Duis ultrices rhoncus ante, ut blandit felis eleifend eget. Nam sit amet libero et magna pulvinar pulvinar eget sit amet metus. Donec lacinia vulputate quam id eleifend. Nulla facilisi. In vestibulum iaculis lacinia.</p>
-    <p>Donec mi ante, fermentum eget efficitur nec, posuere eget ante. Cras in tempus leo, nec pretium nibh. Curabitur vestibulum euismod magna, nec aliquam mi ornare a. Curabitur sollicitudin dignissim sem, at placerat urna feugiat a. Pellentesque eu pharetra enim. Praesent fermentum metus et lacus vestibulum placerat. Cras id auctor urna, eget ultrices tellus. Etiam pellentesque at erat vel mollis. Nullam sem purus, vestibulum sit amet lacus sit amet, scelerisque suscipit nibh. Suspendisse diam eros, tincidunt non ligula malesuada, feugiat pretium lectus.</p>
-  </div>
-  </div>
-
+            <div class="profile_picture_box">
+                <img src="./img/profile-picture3.png" alt="profile picture" class="profile_picture">
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
-
-    </body>
-    <script src="./js/main.js"></script>
-</html>
+
+    </body>
+    <script src="./js/main.js"></script>
+</html>
