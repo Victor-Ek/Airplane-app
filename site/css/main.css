@@ -609,4 +609,13 @@ a:hover {
 
         display: none;
     }
+
+    #maxwidth {
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .moreH1 {
+      right: 10%;
+    }
 }
