@@ -449,12 +449,20 @@ a:hover {
 /* about us slut */
 
 @media all and (max-device-width: 415px) {
-    aside {
-        display: none;
-    }
 
     #maxwidth {
         max-width: 100%;
+    }
+
+    .chassis_card {
+        min-width: 345px;
+        max-width: 345px;
+        margin: auto;
+        margin-top: 10px;
+        height: 230px;
+        border-radius: 2px;
+        background-color: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
 
     .profile_picture_box {
@@ -570,6 +578,8 @@ a:hover {
     }
 
     /* Index slut */
+
+
     /* settings */
     .setting_button {
         width: 40px;
@@ -587,4 +597,16 @@ a:hover {
         align-self: center;
     }
     /*settings slut*/
+}
+
+@media (max-width: 1000px) {
+    .storeCardRow {
+
+        max-width:100%;
+    }
+
+    aside {
+
+        display: none;
+    }
 }
